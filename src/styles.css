@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+
+p-card > div {
+    margin: auto;
+}
+
+.p-card-title, .p-card-subtitle {
+    text-align: center;
+}
+
+body {
+    background-image: url(../src/assets/pexels-pixabay-531756.jpg);
+    background-size: cover;
+}

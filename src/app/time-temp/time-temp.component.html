@@ -1,0 +1,21 @@
+<div class="card">
+    <p-table [value]="timeWeather" [scrollable]="true" scrollHeight="610px" [tableStyle]="{'min-width': '38rem'}">
+        <ng-template pTemplate="header">
+            <tr>
+                <th style="min-width:200px">Time</th>
+                <th style="min-width:200px">Temp</th>
+                <th style="min-width:200px">Weather</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-item>
+            <tr appTable defaultColor="#fff">
+                <td style="min-width:200px">
+                    <div>{{item.date}}</div>
+                    <div class="time-data">{{item.time}}</div>
+                </td>
+                <td style="min-width:200px">{{item.temp}} &deg;{{unitService.unitChange}}</td>
+                <td style="min-width:200px"><img src="http://openweathermap.org/img/w/{{item.icon}}.png" alt="weather"></td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

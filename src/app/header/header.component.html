@@ -1,0 +1,18 @@
+<nav class="nav nav-pills nav-fill bg-light">
+    <div class="nav-link">
+        <img class="nav" src="../../assets/icons8-thermometer-64.png" alt="termometer" width="45" height="36" class="d-inline-block align-text-top">
+    </div>
+    <div class="nav-link">
+        <span class="p-input-icon-left">
+            <i class="pi pi-search"></i>
+            <input type="text" pInputText placeholder="Search" [(ngModel)]="city" (keyup.enter)="getMainTemp()" />
+        </span>
+    </div>
+    <div class="select nav-link">
+        <select  class="form-select select-unit" aria-label="Default select example" [(ngModel)]="unit" (ngModelChange)="getUnit($event)">
+            <option value="metric" selected>&deg;C</option>
+            <option value="imperial">&deg;F</option>
+          </select>
+    </div>
+</nav>
+

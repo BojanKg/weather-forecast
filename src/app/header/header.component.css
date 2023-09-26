@@ -1,0 +1,8 @@
+.select-unit {
+    width: 65px;
+}
+
+.select {
+    display: flex;
+    justify-content: center;
+}

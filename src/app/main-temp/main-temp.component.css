@@ -1,0 +1,38 @@
+.my-temp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+}
+
+.temp-img {
+    width: 64px;
+    height: 64px;
+}
+
+.my-temp div {
+    display: flex;
+    font-size: 20px;
+}
+
+.img-temp {
+    width: 360px;
+    height: 235px;
+    overflow: hidden;
+}
+
+.time {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+
+.img-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.button-card {
+    display: flex;
+    justify-content: space-evenly;
+}

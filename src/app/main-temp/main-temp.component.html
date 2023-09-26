@@ -1,0 +1,39 @@
+<div class="main-temp">
+    <p-card header="{{weather?.city}} {{weather?.temp}} &deg;{{unitService.unitChange}}" subheader="Feels like {{weather?.feels}} &deg;{{unitService.unitChange}}" [style]="{width: '360px'}" styleClass="p-card-shadow">
+        <ng-template pTemplate="header">
+            <div class="img-temp" *ngIf="unitService.unitName">
+                <img *ngIf="weather?.temp <= 5" alt="Card" src="../../assets/thermometer_300x196-ss-no-exp.jpg">
+                <img *ngIf="weather?.temp > 5 && weather?.temp <= 18" alt="Card" src="../../assets/temperature.webp">
+                <img *ngIf="weather?.temp > 18 && weather?.temp <= 30" alt="Card" src="../../assets/1000_F_167063283_tTVooUoNgVAywTTpsLaFosAjYx72g3lP.jpg">
+                <img *ngIf="weather?.temp > 30" alt="Card" src="../../assets/the-new--lengthy-super-hot-spells-2021-07-17.jpg">
+            </div>
+            <div class="img-temp" *ngIf="!unitService.unitName">
+                <img *ngIf="weather?.temp <= 41" alt="Card" src="../../assets/thermometer_300x196-ss-no-exp.jpg">
+                <img *ngIf="weather?.temp > 41 && weather?.temp <= 64" alt="Card" src="../../assets/temperature.webp">
+                <img *ngIf="weather?.temp > 64 && weather?.temp <= 86" alt="Card" src="../../assets/1000_F_167063283_tTVooUoNgVAywTTpsLaFosAjYx72g3lP.jpg">
+                <img *ngIf="weather?.temp > 86" alt="Card" src="../../assets/the-new--lengthy-super-hot-spells-2021-07-17.jpg">
+            </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+            <div class="img-icon">
+                <p class="time">{{weather?.time}}</p>
+                <img src="http://openweathermap.org/img/w/{{weather?.icon}}.png" alt="slika">
+            </div>
+            <div class="my-temp">
+                <div>
+                    <img class="temp-img" src="../../assets/icons8-temperature-low-100.png" alt="temp low">
+                    {{weather?.min}} &deg;{{unitService.unitChange}} 
+                </div>
+                <div><img class="temp-img" src="../../assets/icons8-temperature-high-100.png" alt="temp high"> {{weather?.max}} &deg;{{unitService.unitChange}}</div>
+                <div><img src="../../assets/icons8-humidity-64.png" alt="humidity"> {{weather?.humidity}} %</div>
+                <div><img src="../../assets/icons8-wind-64.png" alt="wind"> {{weather?.wind}} km/h</div>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="footer">
+            <div class="button-card">
+                <p-button label="Table" icon="pi pi-check" [style]="{'margin-left': '0em'}" routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]="{ exact: true }"></p-button>
+                <p-button label="Time" icon="pi pi-check" [style]="{'margin-left': '1.5em'}" routerLinkActive="active" routerLink="/timeTemp"></p-button>
+            </div>
+        </ng-template>
+    </p-card>
+</div>
