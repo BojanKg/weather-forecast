@@ -34,6 +34,7 @@ import {ProgressBarModule} from 'primeng/progressbar';
 import {ToggleButtonModule} from 'primeng/togglebutton';
 import { TimeTempComponent } from './time-temp/time-temp.component';
 import { TableDirective } from './table-city/table.directive';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   { path: '', component: TableCityComponent },
@@ -47,7 +48,8 @@ const appRoutes: Routes = [
     MainTempComponent,
     TableCityComponent,
     TimeTempComponent,
-    TableDirective
+    TableDirective,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

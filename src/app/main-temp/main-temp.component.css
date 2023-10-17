@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: stretch;
+    margin-bottom: 20px;
 }
 
 .temp-img {
