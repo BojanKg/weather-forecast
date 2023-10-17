@@ -1,0 +1,54 @@
+{
+    "data":[
+        {
+            "name": "Beograd",
+            "temp": 0,
+            "weather": ""
+        },
+        {
+            "name": "Novi Sad",
+            "temp": 0,
+            "weather": ""
+        },
+        {
+            "name": "Niš",
+            "temp": 0,
+            "weather": ""
+        },
+        {
+            "name": "Kragujevac",
+            "temp": 0,
+            "weather": ""
+        },
+        {
+            "name": "Subotica",
+            "temp": 0,
+            "weather": ""
+        },
+        {
+            "name": "Kraljevo",
+            "temp": 0,
+            "weather": ""
+        },
+        {
+            "name": "Uzice",
+            "temp": 0,
+            "weather": ""
+        },
+        {
+            "name": "Zlatibor",
+            "temp": 0,
+            "weather": ""
+        },
+        {
+            "name": "Kopaonik",
+            "temp": 0,
+            "weather": ""
+        },
+        {
+            "name": "Vranje",
+            "temp": 0,
+            "weather": ""
+        }
+    ]
+}
